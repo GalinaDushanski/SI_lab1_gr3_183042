@@ -4,7 +4,7 @@ class Item {
 	double price;
 
 	//TODO add variable.
-
+        char danok;
 	//TODO constructor
 
 	//TODO setters and getters
