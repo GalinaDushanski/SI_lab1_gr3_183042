@@ -1,3 +1,30 @@
+class Recept{
+	
+	ArrayList<Item> list=new ArrayList<>();
+	
+		public void brishe(Item i) {
+			list.remove(i);
+		}
+		public void dodava(Item i) {
+			list.add(i);
+		}
+		public double suma() {
+			int suma=0;
+			for(int i=0;i<list.size();i++) {
+				suma+=list.get(i).getPrice();
+			}
+				return suma;
+			}
+		
+		public double ddv() {
+			double ddv=0;
+			for(int i=0;i<list.size();i++) {
+				ddv+=list.get(i).taxReturn();
+			}
+			return ddv;
+		}
+}
+
 class Item {
 	int id;
 	String name;
